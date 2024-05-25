@@ -238,7 +238,7 @@ for i, err in enumerate(error):
 
 ########################################################################################################################
 
-## Several models
+## The get_model function provides the layer configuration ane the training of a neural network for different specifications of the regularization technique used. For example, by setting reg='L1', the network's Dense layers will be regularized by L1, and then at the end of the training, the loss and accuracy curve of the train and validation set will be plotted.
 input_dim = X.shape[1]
    
 def get_model(reg=None, epochs=10):
